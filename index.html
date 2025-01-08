@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PROFILE RAMA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="img.jpg" alt="Foto Profil" class="profile-image">
+        </div>
+        <h1>Rama Septiana Praditya</h1>
+        <p>MY PROFILE</p>
+    </header>
+
+    <div class="container">
+        <section class="about hidden">
+            <h2>Tentang Saya</h2>
+            <p>Saya Rama septiana praditya saya lahir diKlaten tgl 9 september 2006 dan mempunyai   1 adik Cewek saya anak pertama
+                ,saya SD diklaten dan SMP saya disukoharjo setelah lulus melanjutkan SMK digunung kidul yogyakarta Ketika
+                saya SMK saya bergabung dengan organisasi sekolah yaitu Osis dan DA Pramuka dan saya juga mengikuti lomba 
+                Olompicad Cabang film indie yang diselenggarakan oleh muhammadiyah tingkat Kabupaten,Provinsi,dan Nasional  <a href="https://youtu.be/FwhiVEFSCdk?si=xcgccqY7t0OO72wD" target="_blank">https://youtu.be/FwhiVEFSCdk?si=xcgccqY7t0OO72wD</a>
+                 alhamdulilah diTingkat Kabupaten saya dan tim saya mendapat juara 1 dan lanjut ke Tingkat Provinsi ditingkat 
+                Provinsi saya dan tim mendapat juara 2 dan Mewakili Provinsi ke Tingkat nasional Alhamdulilahnya saya dan tim bisa
+                mendapatakan mendali Emas juara 1 Dari banyaknya pesaing seluruh provins, Dari situ saya menjadi semakin semangat untuk mengejar cita cita menjadi seorang 
+                progremer.dan setelah lulus SMKsaya melanjutkan DiUNIVERSITAS TEKNOLOGI YOGYAKARTA mengambil prodi Sarjana Informatika
+           
+            <p>:kemampuan saya adalah saya bisa mengoprasikan kamera mengedit vidio dan foto dan saya juga bisa mengoprasikan komputer.</p>
+            <h1>Hobi Saya :<h1>
+            <div class="skills">
+                <span class="skill-tag">Futsal</span>
+                <span class="skill-tag">Badminton</span>
+                <span class="skill-tag">Fotografer</span>
+                <span class="skill-tag">Mancing</span>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="project-card hidden">
+                <img src="img1.JPG" alt="Project 1">
+                <h3>Tingkat Kabupaten</h3>
+                <p></p>Film indie 
+            </div>
+            <div class="project-card hidden">
+                <img src="img-brosur.jpg" alt="Project 2">
+                <h3>Provinsi ke Nasional</h3>
+                <p>Film indie</p>
+            </div>
+            <div class="project-card hidden">
+                <img src="img3.JPG" alt="Project 3">
+                <h3>Nasional</h3>
+                <p>Film indie </p>
+            </div>
+        </section>
+
+        <section class="contact hidden">
+            <h2>KONTAK SAYA</h2>
+            <p>Jika Ingin Lebih Tau Tentang Saya? Klik Dibawah ini!</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/pradtya_rma09/?igsh=MWRzcnV3MDloZ3kxaQ%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@prdtya06?_t=ZS-8ss2LPUvMlM&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="far fa-envelope"></i></a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
